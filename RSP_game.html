@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock | Scissors | Paper: Game</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="bg-slate-900 grid place-content-center h-screen">
+    <div class="justify-items-center">
+      <h1 class="font-bold text-4xl text-indigo-400 text-center">
+        Rock | Paper | Scissors
+      </h1>
+
+      <div class="flex justify-center mt-14">
+        <button class=" js-rock-button bg-transparent border-[3px] border-white p-4 rounded-full mr-6">
+          <img class="h-24" src="../image/Rock-emoji.png" alt="" />
+        </button>
+
+        <button
+          class="js-paper-button bg-transparent border-[3px] border-white p-4 rounded-full mr-6">
+          <img class="h-24" src="../image/Paper-emoji.png" alt="" />
+        </button>
+
+        <button
+          class=" js-scissors-button bg-transparent border-[3px] border-white p-4 rounded-full mr-6">
+          <img class="h-24" src="../image/Scissors-emoji.png" alt="" />
+        </button>
+      </div>
+
+      <div class=" text-yellow-600 font-medium text-2xl mt-8">
+        <p class="js-moves flex justify-center items-center text-center mb-4"> 
+          <!-- placeholder for result display -->
+        </p>
+        <p class="js-result text-center text-white mb-4"></p>
+      </div>
+
+      <div class="flex-col mt-6">
+        <h1
+          class="js-score text-center text-yellow-600 font-medium text-2xl"
+        >
+          Enjoy!
+        </h1>
+        <div class="flex justify-center mt-6">
+          <button
+            class="js-reset-btn bg-red-700 text-white font-semibold rounded-md w-auto py-2 px-3">
+            Reset Score
+          </button>
+
+          <button class="js-autoplay bg-red-700 text-white font-semibold rounded-md w-auto py-2 px-3 ml-6"
+          >Auto Play</button>
+        </div>
+      </div>
+      <p class="text-white text-lg text-center mt-10">&copy; Sachin Basyal</p>
+    </div>
+    <script src="/src/rsp.js"></script>
+  </body>
+</html>
